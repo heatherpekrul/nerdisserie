@@ -1,0 +1,37 @@
+title: Nerdisserie
+tagline: A nerdy girl's take on baking
+email: heather.pekrul@gmail.com
+description: >-
+  A nerdy girl's take on baking
+baseurl: ""
+url: "https://nerdisserie.com"
+twitter_username: heatherpekrul
+github_username:  heatherpekul
+
+# Navigation
+navigation_header:
+  Home: /
+  About: /about/
+  Contact: /contact/
+
+# Footer
+footer:
+  copyright: Copyright 2019 Heather Pekrul. All rights reserved.
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
