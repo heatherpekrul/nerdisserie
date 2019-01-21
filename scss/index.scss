@@ -72,3 +72,8 @@ h5 {
 h6 {
   font-size: $font-base-size * 1.15;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}

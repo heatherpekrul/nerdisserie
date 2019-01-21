@@ -8,6 +8,7 @@ url: "https://nerdisserie.com"
 twitter_username: heatherpekrul
 github_username:  heatherpekrul
 port: 4001
+default_featured_image_path: /images/placeholder.jpg
 
 # Navigation
 navigation_header:

@@ -10,6 +10,8 @@
   }
 
   &__title {
+    margin-bottom: $standard-spacing-unit;
+
     a {
       text-decoration: none;
     }
@@ -30,7 +32,7 @@
   list-style: none;
 
   li {
-    flex: 0 1 50%;
+    flex: 0 0 calc(50% - #{$standard-spacing-unit});
     margin: $standard-spacing-unit;
     padding: $standard-spacing-unit;
     color: $steel-gray;
@@ -43,5 +45,37 @@
     &:nth-child(odd) {
       margin-left: 0;
     }
+  }
+}
+
+.post-card {
+  a {
+    color: $rich-maroon;
+    text-decoration: none;
+
+    &:hover {
+      color: $blush;
+    }
+  }
+
+  &__featured-image {
+    position: relative;
+    padding-bottom: 50%;
+    margin-bottom: $standard-spacing-unit;
+    overflow: hidden;
+
+    img {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      width: 100%;
+    }
+  }
+
+  &__heading {
+    margin-bottom: $standard-spacing-unit;
   }
 }
