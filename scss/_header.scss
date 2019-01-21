@@ -1,16 +1,23 @@
 .header {
   background: $white;
-  display: flex;
+
+  @media (min-width: $breakpoint-sm) {
+    display: flex;
+  }
 
   &__logo {
     @extend %font-accent;
-    flex: 0 1 auto;
     text-decoration: none;
     color: $blush;
     font-size: $font-base-size * 1.75;
     display: block;
     padding: ($standard-spacing-unit * 0.5) $standard-spacing-unit;
     transition: color 100ms ease-in;
+    text-align: center;
+
+    @media (min-width: $breakpoint-sm) {
+      flex: 0 1 auto;
+    }
 
     &:hover {
       color: $schauss-pink;
@@ -18,18 +25,30 @@
   }
 
   &__nav {
-    flex: 0 1 auto;
+    @media (min-width: $breakpoint-sm) {
+      flex: 0 1 auto;
+    }
 
     ul {
       list-style: none;
       margin: 0;
       padding: 0;
-      display: flex;
+      text-align: center;
+
+      @media (min-width: $breakpoint-sm) {
+        display: flex;
+        text-align: left;
+      }
 
       li {
         margin: 0;
         padding: 0;
-        flex: 0 1 auto;
+        display: inline-block;
+
+        @media (min-width: $breakpoint-sm) {
+          display: block;
+          flex: 0 1 auto;
+        }
 
         a {
           @extend %font-primary-heavy;
@@ -39,7 +58,13 @@
           background-color: transparent;
           transition: background-color 100ms ease-in;
           display: block;
-          padding: 1rem;
+          padding: $standard-spacing-unit * 0.75;
+          font-size: $font-base-size * 0.85;
+
+          @media (min-width: $breakpoint-sm) {
+            font-size: $font-base-size;
+            padding: $standard-spacing-unit;
+          }
 
           &:hover, &:active {
             background-color: $blush;

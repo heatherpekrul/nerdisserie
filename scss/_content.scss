@@ -26,24 +26,34 @@
 }
 
 .post-cards {
-  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
 
+  @media (min-width: $breakpoint-sm) {
+    display: flex;
+  }
+
   li {
-    flex: 0 0 calc(50% - #{$standard-spacing-unit});
     margin: $standard-spacing-unit;
     padding: $standard-spacing-unit;
     color: $steel-gray;
     background: $white;
 
+    @media (min-width: $breakpoint-sm) {
+      flex: 0 0 calc(50% - #{$standard-spacing-unit});
+    }
+
     &:nth-child(even) {
-      margin-right: 0;
+      @media (min-width: $breakpoint-sm) {
+        margin-right: 0;
+      }
     }
 
     &:nth-child(odd) {
-      margin-left: 0;
+      @media (min-width: $breakpoint-sm) {
+        margin-left: 0;
+      }
     }
   }
 }
@@ -78,4 +88,11 @@
   &__heading {
     margin-bottom: $standard-spacing-unit;
   }
+}
+
+.recipe-card {
+  background: $white;
+  color: $steel-gray;
+  padding: $standard-spacing-unit;
+  margin: 0 ($standard-spacing-unit * 2);
 }

@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<article itemscope itemtype="http://schema.org/BlogPosting">
+  <h1 class="content__title" itemprop="name headline">
+    <a href="{{ page.url }}">
+      {{ page.title | escape }}
+    </a>
+  </h1>
+
+  <div class="content__meta">
+    Posted on
+    <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+    {{ page.date | date: date_format }}
+  </div>
+
+  {{ content }}
+
+  <div class="recipe-card">
+    <h2>
+      {{ page.title | escape }}
+    </h2>
+
+    <h3>Ingredients</h3>
+    {{ page.recipe.ingredients | markdownify }}
+
+    <h3>Directions</h3>
+    {{ page.recipe.directions | markdownify }}
+  </div>
+</article>
