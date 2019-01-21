@@ -90,6 +90,16 @@
   }
 }
 
+.recipe-layout {
+  img {
+    @media (min-width: $breakpoint-sm) {
+      max-width: 50%;
+      margin: $standard-spacing-unit auto;
+      display: block;
+    }
+  }
+}
+
 .recipe-card {
   background: $white;
   color: $steel-gray;

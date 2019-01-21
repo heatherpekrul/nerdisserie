@@ -9,6 +9,7 @@ twitter_username: heatherpekrul
 github_username:  heatherpekrul
 port: 4001
 default_featured_image_path: /images/placeholder.jpg
+ga_tracking_id: UA-132827607-1
 
 # Navigation
 navigation_header:

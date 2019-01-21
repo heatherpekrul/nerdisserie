@@ -3,6 +3,7 @@ layout: recipe
 title: Chocolate Coconut Island Blondies
 date: 2019-01-20 18:03:05 -0600
 categories: [recipes, bars]
+featured_image: images/chocolate-coconut-island-blondies-3.jpg
 recipe:
   ingredients: |-
     * 426 g (2 cups) brown sugar
@@ -23,3 +24,7 @@ recipe:
     5. Spread in a greased 9x13 inch pan, and bake for 26-30 minutes. Let cool completely before cutting.
 ---
 These are a tropical version of a blondie. Be careful with the type of rum extract that you use: some brands leave a very artificial aftertaste.
+
+![Mixed blondie dough in bowl](/images/chocolate-coconut-island-blondies-1.jpg)
+![Cookied blondie bars](/images/chocolate-coconut-island-blondies-2.jpg)
+![An individual blondie bar](/images/chocolate-coconut-island-blondies-3.jpg)
