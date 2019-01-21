@@ -1,0 +1,27 @@
+.footer {
+  padding: $standard-spacing-unit;
+  font-size: $font-base-size * 0.75;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.1rem;
+
+  &__social-nav {
+    ul {
+      display: flex;
+      justify-content: center;
+      margin: 0 0 $standard-spacing-unit 0;
+      padding: 0;
+
+      li {
+        flex: 0 1 auto;
+        display: block;
+        margin: 0;
+        padding: 0;
+
+        &:not(:last-child) {
+          margin-right: $standard-spacing-unit;
+        }
+      }
+    }
+  }
+}

@@ -6,7 +6,8 @@ description: >-
 baseurl: ""
 url: "https://nerdisserie.com"
 twitter_username: heatherpekrul
-github_username:  heatherpekul
+github_username:  heatherpekrul
+port: 4001
 
 # Navigation
 navigation_header:
@@ -20,7 +21,6 @@ footer:
 
 # Build settings
 markdown: kramdown
-theme: minima
 plugins:
   - jekyll-feed
 

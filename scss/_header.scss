@@ -1,0 +1,57 @@
+.header {
+  background: $white;
+  display: flex;
+
+  &__logo {
+    @extend %font-accent;
+    flex: 0 1 auto;
+    text-decoration: none;
+    color: $blush;
+    font-size: $font-base-size * 1.75;
+    display: block;
+    padding: ($standard-spacing-unit * 0.5) $standard-spacing-unit;
+    transition: color 100ms ease-in;
+
+    &:hover {
+      color: $schauss-pink;
+    }
+  }
+
+  &__nav {
+    flex: 0 1 auto;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+
+      li {
+        margin: 0;
+        padding: 0;
+        flex: 0 1 auto;
+
+        a {
+          @extend %font-primary-heavy;
+          text-transform: uppercase;
+          text-decoration: none;
+          color: $gunmetal;
+          background-color: transparent;
+          transition: background-color 100ms ease-in;
+          display: block;
+          padding: 1rem;
+
+          &:hover, &:active {
+            background-color: $blush;
+            color: $white;
+          }
+
+          &.active {
+            background-color: $rich-maroon;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}

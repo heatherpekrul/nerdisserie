@@ -1,6 +1,74 @@
 @import 'settings';
+@import 'header';
+@import 'footer';
+@import 'icons';
+@import 'content';
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
 
 body {
-  background: $gunmetal;
+  @extend %font-primary;
+  @extend %font-primary-light;
+  font-size: $font-base-size;
+  margin: 0;
+  background: $steel-gray;
   color: $white;
+}
+
+a {
+  @extend %font-primary-light;
+  text-decoration: underline;
+  color: $white;
+  transition: color 100ms ease-in;
+
+  &:hover {
+    color: $schauss-pink;
+  }
+}
+
+%visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px; width: 1px;
+  margin: -1px; padding: 0; border: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @extend %font-accent;
+  margin: 0 0 1em 0;
+}
+
+h1 {
+  font-size: $font-base-size * 2;
+}
+
+h2 {
+  font-size: $font-base-size * 1.75;
+}
+
+h3 {
+  font-size: $font-base-size * 1.5;
+}
+
+h4 {
+  font-size: $font-base-size * 1.33;
+}
+
+h5 {
+  font-size: $font-base-size * 1.25;
+}
+
+h6 {
+  font-size: $font-base-size * 1.15;
 }

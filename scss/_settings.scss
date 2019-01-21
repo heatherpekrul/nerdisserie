@@ -1,6 +1,7 @@
 /* COLORS */
 $white: #fff;
 $black: #000;
+$steel-gray: #242734;
 $gunmetal: #2D3142;
 $rich-maroon: #A53860;
 $blush: #DA627D;
@@ -8,3 +9,27 @@ $schauss-pink: #FFA5AB;
 $peach-puff: #F9DBBD;
 
 /* TYPOGRAPHY */
+$font-base-size: 16px;
+
+%font-primary {
+  font-family: 'Roboto', sans-serif;
+}
+
+%font-accent {
+  font-family: 'Old Standard TT', serif;
+}
+
+%font-primary-light {
+  font-weight: 300;
+}
+
+%font-primary-normal {
+  font-weight: 400;
+}
+
+%font-primary-heavy {
+  font-weight: 700;
+}
+
+/* SPACING */
+$standard-spacing-unit: 1rem;
