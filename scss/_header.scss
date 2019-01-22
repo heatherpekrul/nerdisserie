@@ -22,6 +22,16 @@
     &:hover {
       color: $schauss-pink;
     }
+
+    &:before {
+      @extend %icon-nerdisserie;
+      content: '';
+      width: $font-base-size * 2;
+      height: $font-base-size * 2;
+      background-repeat: no-repeat;
+      display: inline-block;
+      vertical-align: middle;
+    }
   }
 
   &__nav {

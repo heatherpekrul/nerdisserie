@@ -22,10 +22,10 @@
   <meta content="{{ site.url }}/about/" property="article:author">
 {% endif %}
 
-{% if page.image %}
-  <meta content="{{ site.url }}/static/img/posts/{{ page.image }}" property="og:image">
+{% if page.featured_image %}
+  <meta content="{{ site.url }}/{{ page.featured_image }}" property="og:image">
 {% else %}
-  <meta content="{{ site.url }}{{ site.avatar_url }}" property="og:image">
+  <meta content="{{ site.url }}/{{ site.avatar_url }}" property="og:image">
 {% endif %}
 
 {% if page.categories %}
@@ -59,6 +59,6 @@
   <meta name="twitter:description" content="{{ site.description }}">
 {% endif %}
 
-{% if page.header-img %}
-  <meta name="twitter:image:src" content="{{ site.url }}/{{ page.header-img }}">
+{% if page.featured_image %}
+  <meta name="twitter:image:src" content="{{ site.url }}/{{ page.featured_image }}">
 {% endif %}

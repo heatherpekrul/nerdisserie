@@ -1,15 +1,21 @@
 title: Nerdisserie
 tagline: A nerdy girl's take on baking
-email: heather.pekrul@gmail.com
+email: nerdisserie@gmail.com
+author: Heather Pekrul
 description: >-
   A nerdy girl's take on baking
 baseurl: ""
 url: "https://nerdisserie.com"
-twitter_username: heatherpekrul
-github_username:  heatherpekrul
 port: 4001
-default_featured_image_path: /images/placeholder.jpg
+default_featured_image_path: /images/site/placeholder.jpg
 ga_tracking_id: UA-132827607-1
+
+# Social
+avatar_url: images/site/share-sq.jpg
+twitter_username: nerdisserie
+github_username:  heatherpekrul
+github_url: https://github.com/heatherpekrul/nerdisserie
+facebook_page: nerdisserie
 
 # Navigation
 navigation_header:
@@ -40,3 +46,8 @@ exclude:
   - webpack.config.js
   - yarn-error.log
   - yarn.lock
+
+# Build Commands
+# JS/CSS assets: webpack
+# Local Jekyll build and serve: bundle exec jekyll serve
+# Production Jekyll build: JEKYLL_ENV=production jekyll build
