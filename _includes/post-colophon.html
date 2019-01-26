@@ -1,0 +1,15 @@
+<div class="post-colophon">
+  <h2 class="post-colophon__heading">
+    Tags:
+  </h2>
+  
+  <ul>
+    {% for tag in page.tags %}
+    <li>
+      <a href="/tag/{{ tag }}">
+        {{ tag }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

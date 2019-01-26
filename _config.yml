@@ -21,6 +21,7 @@ facebook_page: nerdisserie
 navigation_header:
   Home: /
   About: /about/
+  Tools: /tools/
   Contact: /contact/
 
 # Footer
@@ -31,6 +32,18 @@ footer:
 markdown: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-archives
+
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout: home
+  permalinks:
+    tag: '/tag/:name/'
+    category: '/category/:name/'
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

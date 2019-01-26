@@ -3,6 +3,8 @@
 @import 'footer';
 @import 'icons';
 @import 'content';
+@import 'recipes';
+@import 'comments';
 
 html {
   -webkit-box-sizing: border-box;
@@ -50,6 +52,7 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
   @extend %font-accent;
+  @extend %font-primary-light;
   margin: 0 0 1em 0;
   line-height: 1.25;
 }

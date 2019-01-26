@@ -90,19 +90,34 @@
   }
 }
 
-.recipe-layout {
-  img {
-    @media (min-width: $breakpoint-sm) {
-      max-width: 50%;
-      margin: $standard-spacing-unit auto;
-      display: block;
+.post-colophon {
+  background: $steel-gray;
+  text-transform: uppercase;
+  padding: 1em;
+  font-size: $font-base-size * 0.75;
+
+  &__heading {
+    @extend %font-primary;
+    font-size: $font-base-size * 0.75;
+    display: inline-block;
+    margin: 0 1em 0 0;
+  }
+
+  ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+
+      a {
+        display: block;
+        text-decoration: none;
+        padding: 0.5em 1em;
+      }
     }
   }
-}
-
-.recipe-card {
-  background: $white;
-  color: $steel-gray;
-  padding: $standard-spacing-unit;
-  margin: 0 ($standard-spacing-unit * 2);
 }

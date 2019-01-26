@@ -11,21 +11,55 @@ layout: default
   <div class="content__meta">
     Posted on
     <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+    {%- assign date_format = "%b %-d, %Y" -%}
     {{ page.date | date: date_format }}
   </div>
 
-  {{ content }}
+  <div itemprop="articleBody">
+    {{ content }}
+  </div>
 
-  <div class="recipe-card">
-    <h2>
+  <div class="recipe-card" itemscope itemtype="http://schema.org/Recipe">
+    <h2 itemprop="name">
       {{ page.title | escape }}
     </h2>
+
+    <ul class="recipe-card__meta">
+      {% if page.recipe.prep_time %}
+        <li>
+          Prep Time: <span>{{ page.recipe.prep_time }}</span>
+          <meta itemprop="prepTime" content="{{ page.recipe.prep_time_meta }}">
+        </li>
+      {% endif %}
+
+      {% if page.recipe.cook_time %}
+        <li>
+          Cook Time: <span>{{ page.recipe.cook_time }}</span>
+          <meta itemprop="cookTime" content="{{ page.recipe.cook_time_meta }}">
+        </li>
+      {% endif %}
+
+      {% if page.recipe.yield %}
+        <li>
+          Yield: <span itemprop="recipeYield">{{ page.recipe.yield }}</span>
+        </li>
+      {% endif %}
+    </ul>
 
     <h3>Ingredients</h3>
     {{ page.recipe.ingredients | markdownify }}
 
     <h3>Directions</h3>
-    {{ page.recipe.directions | markdownify }}
+    <div itemprop="recipeInstructions">
+      {{ page.recipe.directions | markdownify }}
+    </div>
   </div>
+
+  {% if page.tags %}
+    {% include post-colophon.html %}
+  {% endif %}
+
+  {% if page.comments %}
+    {% include disqus.html %}
+  {% endif %}
 </article>

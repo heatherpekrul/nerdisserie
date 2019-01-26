@@ -1,0 +1,47 @@
+.recipe-layout {
+  img {
+    @media (min-width: $breakpoint-sm) {
+      max-width: 50%;
+      margin: $standard-spacing-unit auto;
+      display: block;
+    }
+  }
+}
+
+.recipe-card {
+  background: $white;
+  color: $steel-gray;
+  padding: $standard-spacing-unit;
+  margin: 0 ($standard-spacing-unit * 2) $standard-spacing-unit ($standard-spacing-unit * 2);
+
+  &__meta {
+    list-style: none;
+    display: block;
+    margin: 0 0 $standard-spacing-unit 0;
+    padding: ($standard-spacing-unit / 2);
+    background: $peach-puff;
+    justify-content: space-between;
+
+    @media (min-width: $breakpoint-sm) {
+      display: flex;
+    }
+
+    li {
+      &:not(:first-child) {
+        @media (min-width: $breakpoint-sm) {
+          text-align: center;
+        }
+      }
+
+      &:last-child {
+        @media (min-width: $breakpoint-sm) {
+          text-align: right;
+        }
+      }
+
+      @media (min-width: $breakpoint-sm) {
+        flex: 1 1 auto;
+      }
+    }
+  }
+}

@@ -17,4 +17,12 @@ layout: default
   </div>
 
   {{ content }}
+
+  {% if page.tags %}
+    {% include post-colophon.html %}
+  {% endif %}
+
+  {% if page.comments %}
+    {% include disqus.html %}
+  {% endif %}
 </article>
