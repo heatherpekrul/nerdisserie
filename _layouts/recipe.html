@@ -20,6 +20,28 @@ layout: default
   </div>
 
   <div class="recipe-card" itemscope itemtype="http://schema.org/Recipe">
+    <meta itemprop="author" content="{{ site.author }}">
+
+    {% if page.recipe.description %}
+      <meta itemprop="description" content="{{ page.recipe.description }}">
+    {% endif %}
+
+    {% if page.recipe.category %}
+      <meta itemprop="recipeCategory" content="{{ page.recipe.category }}">
+    {% endif %}
+
+    {% if page.recipe.cuisine %}
+      <meta itemprop="recipeCuisine" content="{{ page.recipe.cuisine }}">
+    {% endif %}
+
+    {% if page.recipe.keywords %}
+      <meta itemprop="keywords" content="{{ page.recipe.keywords }}">
+    {% endif %}
+
+    {% if page.featured_image %}
+      <meta itemprop="image" content="{{ site.url }}{{ page.featured_image | relative_url }}">
+    {% endif %}
+
     <h2 itemprop="name">
       {{ page.title | escape }}
     </h2>
