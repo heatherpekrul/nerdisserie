@@ -32,16 +32,17 @@
 
   @media (min-width: $breakpoint-sm) {
     display: flex;
+    flex-wrap: wrap;
   }
 
   li {
-    margin: $standard-spacing-unit;
-    padding: $standard-spacing-unit;
+    margin: 1em;
+    padding: 1em;
     color: $steel-gray;
     background: $white;
 
     @media (min-width: $breakpoint-sm) {
-      flex: 0 0 calc(50% - #{$standard-spacing-unit});
+      flex: 0 0 calc(50% - #{1em});
     }
 
     &:nth-child(even) {
@@ -71,7 +72,7 @@
   &__featured-image {
     position: relative;
     padding-bottom: 50%;
-    margin-bottom: $standard-spacing-unit;
+    margin-bottom: 1em;
     overflow: hidden;
 
     img {
@@ -86,7 +87,7 @@
   }
 
   &__heading {
-    margin-bottom: $standard-spacing-unit;
+    margin-bottom: 1em;
   }
 }
 
