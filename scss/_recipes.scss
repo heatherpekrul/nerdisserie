@@ -12,7 +12,10 @@
   background: $white;
   color: $steel-gray;
   padding: $standard-spacing-unit;
-  margin: 0 ($standard-spacing-unit * 2) $standard-spacing-unit ($standard-spacing-unit * 2);
+
+  @media (min-width: $breakpoint-sm) {
+    margin: 0 0 $standard-spacing-unit 0;
+  }
 
   &__meta {
     list-style: none;

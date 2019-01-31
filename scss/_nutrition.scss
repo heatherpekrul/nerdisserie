@@ -1,0 +1,36 @@
+.nutritionFacts {
+  padding: 1em;
+  margin: 1em 0;
+  border: 1px solid $schauss-pink;
+  text-transform: uppercase;
+  font-size: $font-base-size * 0.75;
+
+  &__heading {
+    margin-bottom: $standard-spacing-unit;
+  }
+
+  &__disclaimer {
+    margin-bottom: $standard-spacing-unit;
+  }
+
+  &__facts {
+    margin: 0;
+    padding: 0;
+
+    dd, dt {
+      display: inline-block;
+    }
+
+    dt {
+      @extend %font-primary-heavy;
+    }
+
+    dd {
+      margin-left: 0;
+
+      &:not(:last-child) {
+        margin-right: 2em;
+      }
+    }
+  }
+}

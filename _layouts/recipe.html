@@ -69,13 +69,114 @@ layout: default
     </ul>
 
     <h3>Ingredients</h3>
-    {{ page.recipe.ingredients | markdownify }}
+    <ul>
+      {% for ingredient in page.recipe.ingredients %}
+        <li itemprop="recipeIngredient">
+          {{ ingredient }}
+        </li>
+      {% endfor %}
+    </ul>
 
     <h3>Directions</h3>
     <div itemprop="recipeInstructions">
       {{ page.recipe.directions | markdownify }}
     </div>
   </div>
+
+  {% if page.recipe.nutrition %}
+  <div class="nutritionFacts" itemprop="nutrition" itemscope itemtype="http://schema.org/NutritionInformation">
+    <h2 class="nutritionFacts__heading">Nutrition Facts</h2>
+    <div class="nutritionFacts__disclaimer">
+      The nutrition facts below are an estimate and can vary based on the exact ingredients used. The values below were calculated using <a href="https://cronometer.com">Cronometer</a>.
+    </div>
+
+    <dl class="nutritionFacts__facts">
+      {% if page.recipe.nutrition.serving_size %}
+        <dt>Serving Size</dt>
+        <dd itemprop="servingSize">
+          {{ page.recipe.nutrition.serving_size }}
+        </dd>
+      {% endif %}
+
+      {% if page.recipe.nutrition.calories %}
+        <dt>Calories</dt>
+        <dd itemprop="calories">
+          {{ page.recipe.nutrition.calories }}
+        </dd>
+      {% endif %}
+
+      {% if page.recipe.nutrition.carbohydrates_total %}
+        <dt>Total Carbohydrates</dt>
+        <dd itemprop="carbohydrateContent">
+          {{ page.recipe.nutrition.carbohydrates_total }}
+        </dd>
+      {% endif %}
+
+      {% if page.recipe.nutrition.cholesterol %}
+        <dt>Cholesterol</dt>
+        <dd itemprop="cholesterolContent">
+          {{ page.recipe.nutrition.cholesterol }}
+        </dd>
+      {% endif %}
+
+      {% if page.recipe.nutrition.fat_total %}
+        <dt>Total Fat</dt>
+        <dd itemprop="fatContent">
+          {{ page.recipe.nutrition.fat_total }}
+        </dd>
+      {% endif %}
+
+      {% if page.recipe.nutrition.fat_saturated %}
+        <dt>Saturated Fat</dt>
+        <dd itemprop="saturatedFatContent">
+          {{ page.recipe.nutrition.fat_saturated }}
+        </dd>
+      {% endif %}
+
+      {% if page.recipe.nutrition.fat_trans %}
+        <dt>Trans Fat</dt>
+        <dd itemprop="transFatContent">
+          {{ page.recipe.nutrition.fat_trans }}
+        </dd>
+      {% endif %}
+
+      {% if page.recipe.nutrition.fat_unsaturated %}
+        <dt>Unsaturated Fat</dt>
+        <dd itemprop="unsaturatedFatContent">
+          {{ page.recipe.nutrition.fat_unsaturated }}
+        </dd>
+      {% endif %}
+
+      {% if page.recipe.nutrition.fiber %}
+        <dt>Fiber</dt>
+        <dd itemprop="fiberContent">
+          {{ page.recipe.nutrition.fiber }}
+        </dd>
+      {% endif %}
+
+      {% if page.recipe.nutrition.protein %}
+        <dt>Protein</dt>
+        <dd itemprop="proteinContent">
+          {{ page.recipe.nutrition.protein }}
+        </dd>
+      {% endif %}
+
+      {% if page.recipe.nutrition.sodium %}
+        <dt>Sodium</dt>
+        <dd itemprop="sodiumContent">
+          {{ page.recipe.nutrition.sodium }}
+        </dd>
+      {% endif %}
+
+      {% if page.recipe.nutrition.sugar %}
+        <dt>Sugar</dt>
+        <dd itemprop="sugarContent">
+          {{ page.recipe.nutrition.sugar }}
+        </dd>
+      {% endif %}
+    </dl>
+  </div>
+  {% endif %}
 
   {% if page.tags %}
     {% include post-colophon.html %}

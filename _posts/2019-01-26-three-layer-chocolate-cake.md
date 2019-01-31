@@ -12,16 +12,17 @@ recipe:
   cook_time: 33 minutes
   cook_time_meta: PT33M
   yield: 14 servings
-  ingredients: |-
-    * 260 g (2 cups) all purpose flour
-    * 414 g (2 cups) sugar
-    * 70 g (3/4 cup) cocoa powder
-    * 2 tsp baking soda
-    * 2 large eggs
-    * 240 ml (1 cup) buttermilk
-    * 240 ml (1 cup) vegetable oil
-    * 1 tsp vanilla extract
-    * 240 ml (1 cup) boiling water
+  ingredients: [
+      260 g (2 cups) all purpose flour,
+      414 g (2 cups) sugar,
+      70 g (3/4 cup) cocoa powder,
+      2 tsp baking soda,
+      2 large eggs,
+      240 ml (1 cup) buttermilk,
+      240 ml (1 cup) vegetable oil,
+      1 tsp vanilla extract,
+      240 ml (1 cup) boiling water,
+    ]
   directions: |-
     1. Preheat oven to 300&deg; F (149&deg; C).
     2. Prepare three 8-inch (20.32 cm) round cake pans with parchment paper along the bottom of the pans. Grease the sides of the pans.

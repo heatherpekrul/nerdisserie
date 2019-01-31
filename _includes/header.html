@@ -1,25 +1,27 @@
 <header class="header">
-  <a href="{{ site.url }}" class="header__logo">
-    {{ site.title }}
-  </a>
+  <div class="header__wrapper">
+    <a href="{{ site.url }}" class="header__logo">
+      {{ site.title }}
+    </a>
 
-  {% if site.navigation_header %}
-    <nav class="header__nav">
-      <ul>
-        {% for item in site.navigation_header %}
-          {% if item[1] contains '://' %}
-            {% assign url = item[1] %}
-          {% else %}
-            {% assign url = item[1] | relative_url %}
-          {% endif %}
+    {% if site.navigation_header %}
+      <nav class="header__nav">
+        <ul>
+          {% for item in site.navigation_header %}
+            {% if item[1] contains '://' %}
+              {% assign url = item[1] %}
+            {% else %}
+              {% assign url = item[1] | relative_url %}
+            {% endif %}
 
-          <li>
-            <a href="{{ url }}" class="{% if item[1] == page.url %}active{% endif %}">
-              {{ item[0] }}
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
-    </nav>
-  {% endif %}
+            <li>
+              <a href="{{ url }}" class="{% if item[1] == page.url %}active{% endif %}">
+                {{ item[0] }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    {% endif %}
+  </div>
 </header>
