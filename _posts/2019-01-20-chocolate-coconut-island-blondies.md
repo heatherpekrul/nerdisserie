@@ -2,16 +2,16 @@
 layout: recipe
 title: Chocolate Coconut Island Blondies
 date: 2019-01-20 18:03:05 -0600
-last_modified_at: 2019-01-26 15:47:00 -0600
+last_modified_at: 2019-02-04 19:00:00 -0600
 categories: [recipes]
 tags: [bars, coconut, rum]
 comments: true
 featured_image: images/chocolate-coconut-island-blondies-3.jpg
 recipe:
   prep_time: 15 minutes
-  prep_time_meta: 15M
+  prep_time_meta: PT15M
   cook_time: 30 minutes
-  cook_time_meta: 30M
+  cook_time_meta: PT30M
   yield: 18 servings
   ingredients: [
       426 g (2 cups) brown sugar,
@@ -44,6 +44,9 @@ recipe:
     serving_size: 1 serving (1/18 recipe)
     sodium: 211.3 mg
     sugar: 33.4 g
+  category: dessert
+  cuisine: American
+  keywords: quick bar dessert
 ---
 These are a tropical version of a blondie. Be careful with the type of rum extract that you use: some brands leave a very artificial aftertaste.
 

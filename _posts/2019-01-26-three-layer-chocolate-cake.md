@@ -2,6 +2,7 @@
 layout: recipe
 title: Three Layer Chocolate Cake
 date: 2019-01-26 16:30:00 -0600
+last_modified_at: 2019-02-04 19:00:00 -0600
 categories: [recipes]
 tags: [cake, chocolate]
 comments: true
@@ -11,7 +12,7 @@ recipe:
   prep_time_meta: PT15M
   cook_time: 33 minutes
   cook_time_meta: PT33M
-  yield: 14 servings
+  yield: 20 servings
   ingredients: [
       260 g (2 cups) all purpose flour,
       414 g (2 cups) sugar,
@@ -34,6 +35,19 @@ recipe:
     8. The cakes will be very moist, and can be hard to handle as a result. I recommend using parchment paper when handling to avoid the cakes sticking to any surfaces. Wrapping with plastic wrap then freezing these cakes prior to decorating can make them easier to frost.
   description: |
     This is a very moist chocolate cake recipe that has enough batter to fill three 8-inch cake pans. This cake goes well with many other flavors like blackberries, raspberries, caramel, and more.
+  nutrition:
+    calories: 247 kcal
+    carbohydrates_total: 33.3 g
+    cholesterol: 19.8 mg
+    fat_saturated: 2.4 g
+    fat_total: 12.4 g
+    fat_trans: 0.1 g
+    fat_unsaturated: 0 g
+    fiber: 1.7 g
+    protein: 3 g
+    serving_size: 1 slice (1/20 recipe)
+    sodium: 147.4 mg
+    sugar: 21.4 g
   category: dessert
   cuisine: American
   keywords: moist chocolate cake, basic chocolate cake
