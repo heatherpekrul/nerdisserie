@@ -25,7 +25,7 @@ recipe:
       1 bag (10 oz) M&Ms minis
     ]
   directions: |-
-    1. Preheat the oven to 350&deg; F (177&deg C). Prepare a 9x13 inch pan with baking grease.
+    1. Preheat the oven to 350&deg; F (177&deg; C). Prepare a 9x13 inch pan with baking grease.
     2. Combine eggs, cocoa powder, vanilla, salt, and baking soda in a medium bowl. Beat at a medium speed with a hand mixer until smooth. The batter will be very thick.
     3. Melt butter in a large measuring cup or a bowl, then mix in the sugar with the butter until incorporated. Heating the mixture a second time in the microwave and then stirring will help the sugar dissolve into the butter.
     4. Add the butter mixture into the other ingredients and mix until smooth.
