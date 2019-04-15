@@ -59,8 +59,3 @@ exclude:
   - webpack.config.js
   - yarn-error.log
   - yarn.lock
-
-# Build Commands
-# JS/CSS assets: webpack
-# Local Jekyll build and serve: bundle exec jekyll serve
-# Production Jekyll build: JEKYLL_ENV=production jekyll build
