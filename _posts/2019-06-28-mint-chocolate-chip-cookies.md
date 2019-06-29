@@ -19,7 +19,7 @@ recipe:
       18 tbsp (2 1/4 sticks) softened unsalted butter,
       213 g (1 cup) brown sugar,
       198 g (1 cup) granulated white sugar,
-      1 cup finely minced fresh mint,
+      1/2 cup finely minced fresh mint,
       2 eggs,
       1 tsp salt,
       1 tsp baking soda,
