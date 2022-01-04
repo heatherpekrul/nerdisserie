@@ -14,7 +14,7 @@ recipe:
   cook_time_meta: PT7M
   yield: 48 cookies
   ingredients: [
-      8 tablespoons (113g) butter, room temperature,
+      8 tablespoons (113g) butter (room temperature),
       3/4 cup (149 g) granulated sugar,
       1 teaspoon vanilla extract,
       zest of 1 orange,
