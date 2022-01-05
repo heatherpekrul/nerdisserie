@@ -5,7 +5,6 @@ date: 2019-02-04 21:22:00 -0600
 last_modified_at: 2019-02-04 21:22:00 -0600
 categories: [recipes]
 tags: [jam, filling, fruit]
-comments: true
 featured_image: images/jam-filling-cinnamon-roll.jpg
 recipe:
   prep_time: 5 minutes

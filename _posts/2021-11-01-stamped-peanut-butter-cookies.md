@@ -5,7 +5,6 @@ date: 2021-11-01 11:32:00 -0600
 last_modified_at: 2021-11-01 11:32:00 -0600
 categories: [recipes]
 tags: [dessert, cookie, peanut butter]
-comments: true
 featured_image: images/peanut-butter-cookies.jpg
 recipe:
   prep_time: 15 minutes

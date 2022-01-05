@@ -5,7 +5,6 @@ date: 2019-06-28 14:39:00 -0600
 last_modified_at: 2019-06-28 14:39:00 -0600
 categories: [recipes]
 tags: [cookies, mint, chocolate]
-comments: true
 featured_image: images/mint-chocolate-chip-cookies.jpg
 recipe:
   prep_time: 30 minutes

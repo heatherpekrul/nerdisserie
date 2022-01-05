@@ -5,7 +5,6 @@ date: 2019-01-20 18:03:05 -0600
 last_modified_at: 2019-02-04 19:00:00 -0600
 categories: [recipes]
 tags: [bars, coconut, rum, easy]
-comments: true
 featured_image: images/chocolate-coconut-island-blondies-3.jpg
 recipe:
   prep_time: 15 minutes

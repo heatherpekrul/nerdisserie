@@ -5,7 +5,6 @@ date: 2019-01-26 16:30:00 -0600
 last_modified_at: 2019-02-04 19:00:00 -0600
 categories: [recipes]
 tags: [cake, chocolate]
-comments: true
 featured_image: images/three-layer-chocolate-cake.jpg
 recipe:
   prep_time: 15 minutes

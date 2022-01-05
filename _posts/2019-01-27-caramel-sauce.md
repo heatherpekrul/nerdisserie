@@ -5,7 +5,6 @@ date: 2019-01-27 19:00:00 -0600
 last_modified_at: 2019-02-04 19:00:00 -0600
 categories: [recipes]
 tags: [sauce, topping, dessert]
-comments: true
 recipe:
   prep_time: 5 minutes
   prep_time_meta: PT5M

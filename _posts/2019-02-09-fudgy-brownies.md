@@ -5,7 +5,6 @@ date: 2019-02-09 18:36:00 -0600
 last_modified_at: 2019-02-09 18:36:00 -0600
 categories: [recipes]
 tags: [easy, bars]
-comments: true
 featured_image: images/fudgy-brownies.jpg
 recipe:
   prep_time: 15 minutes

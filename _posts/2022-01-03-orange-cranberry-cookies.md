@@ -5,7 +5,6 @@ date: 2022-01-03 20:44:00 -0600
 last_modified_at: 2022-01-03 20:44:00 -0600
 categories: [recipes]
 tags: [dessert, cookie, cranberry, orange, citrus, white chocolate]
-comments: true
 featured_image: images/orange-cranberry-cookies-1.jpg
 recipe:
   prep_time: 15 minutes

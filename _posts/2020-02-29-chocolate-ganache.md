@@ -5,7 +5,6 @@ date: 2020-02-29 11:32:00 -0600
 last_modified_at: 2020-02-29 11:32:00 -0600
 categories: [recipes]
 tags: [chocolate, ganache, decor]
-comments: true
 recipe:
   prep_time: 5 minutes
   prep_time_meta: PT5M
